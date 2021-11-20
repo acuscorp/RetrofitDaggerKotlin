@@ -3,8 +3,9 @@ package com.omnitracs.retrofit_dagger_kotlin.networking
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
 
-class FetchCatImageUseCase(private val theCatApiService: TheCatApiService) {
+class FetchCatImageUseCase @Inject constructor(private val theCatApiService: TheCatApiService) {
     sealed class Result {
         data class Success(val name: String, val imageUrl: String) : Result()
         object Failure : Result()
