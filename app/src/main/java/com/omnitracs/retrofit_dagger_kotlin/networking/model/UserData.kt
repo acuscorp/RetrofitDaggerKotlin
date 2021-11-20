@@ -1,4 +1,4 @@
-package com.omnitracs.retrofit_dagger_kotlin.model
+package com.omnitracs.retrofit_dagger_kotlin.networking.model
 
 import com.squareup.moshi.Json
 
