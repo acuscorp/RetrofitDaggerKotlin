@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.omnitracs.retrofit_dagger_kotlin.networking.TheCatApiService
 
 class ActivityCompositionRoot(
-    private val activity: AppCompatActivity,
+    val activity: AppCompatActivity,
     private val appCompositionRoot: AppCompositionRoot
 ) {
+
+    val application = appCompositionRoot.application
 
     val theCatApiService: TheCatApiService = appCompositionRoot.theCatApiService
 }
