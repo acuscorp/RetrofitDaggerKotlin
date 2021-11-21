@@ -6,7 +6,7 @@ import com.omnitracs.retrofit_dagger_kotlin.common.composition.AppModule
 import com.omnitracs.retrofit_dagger_kotlin.common.composition.DaggerAppComponent
 
 class MyApplication: Application() {
-    val appModule: AppComponent by lazy {
+    val appComponent: AppComponent by lazy {
        DaggerAppComponent
            .builder()
            .appModule(AppModule(this))

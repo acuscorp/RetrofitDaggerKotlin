@@ -19,6 +19,7 @@ class CatImageFragment : BaseFragment() {
     @Inject lateinit var fetchCatImageUseCase: FetchCatImageUseCase
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        injector.inject(this)
         super.onCreate(savedInstanceState)
         /*fetchCatImageUseCase = compositionRoot.fetchCatImageUsaCase // using dagger*/
     }

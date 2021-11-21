@@ -7,7 +7,7 @@ import com.omnitracs.retrofit_dagger_kotlin.common.composition.ActivityModule
 import com.omnitracs.retrofit_dagger_kotlin.common.composition.DaggerActivityComponent
 
 open class BaseActivity:AppCompatActivity() {
-    private val appComponent = (application as MyApplication).appModule
+    private val appComponent get() = (application as MyApplication).appComponent
 
     val activityComponent: ActivityComponent by lazy {
         DaggerActivityComponent
