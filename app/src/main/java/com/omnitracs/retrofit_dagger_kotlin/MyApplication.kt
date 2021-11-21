@@ -1,9 +1,9 @@
 package com.omnitracs.retrofit_dagger_kotlin
 
 import android.app.Application
-import com.omnitracs.retrofit_dagger_kotlin.common.composition.AppComponent
-import com.omnitracs.retrofit_dagger_kotlin.common.composition.AppModule
-import com.omnitracs.retrofit_dagger_kotlin.common.composition.DaggerAppComponent
+import com.omnitracs.retrofit_dagger_kotlin.common.di.application.AppComponent
+import com.omnitracs.retrofit_dagger_kotlin.common.di.application.AppModule
+import com.omnitracs.retrofit_dagger_kotlin.common.di.DaggerAppComponent
 
 class MyApplication: Application() {
     val appComponent: AppComponent by lazy {

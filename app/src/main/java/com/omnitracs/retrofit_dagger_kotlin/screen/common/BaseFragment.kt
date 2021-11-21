@@ -1,9 +1,9 @@
 package com.omnitracs.retrofit_dagger_kotlin.screen.common
 
 import androidx.fragment.app.Fragment
-import com.omnitracs.retrofit_dagger_kotlin.common.composition.DaggerFragmentComponent
-import com.omnitracs.retrofit_dagger_kotlin.common.composition.FragmentComponent
-import com.omnitracs.retrofit_dagger_kotlin.common.composition.FragmentModule
+import com.omnitracs.retrofit_dagger_kotlin.common.di.DaggerFragmentComponent
+import com.omnitracs.retrofit_dagger_kotlin.common.di.fragment.FragmentComponent
+import com.omnitracs.retrofit_dagger_kotlin.common.di.fragment.FragmentModule
 
 open class BaseFragment: Fragment() {
 

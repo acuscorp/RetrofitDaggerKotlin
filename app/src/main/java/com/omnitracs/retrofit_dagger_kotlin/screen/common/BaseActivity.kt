@@ -2,9 +2,9 @@ package com.omnitracs.retrofit_dagger_kotlin.screen.common
 
 import androidx.appcompat.app.AppCompatActivity
 import com.omnitracs.retrofit_dagger_kotlin.MyApplication
-import com.omnitracs.retrofit_dagger_kotlin.common.composition.ActivityComponent
-import com.omnitracs.retrofit_dagger_kotlin.common.composition.ActivityModule
-import com.omnitracs.retrofit_dagger_kotlin.common.composition.DaggerActivityComponent
+import com.omnitracs.retrofit_dagger_kotlin.common.di.activity.ActivityComponent
+import com.omnitracs.retrofit_dagger_kotlin.common.di.activity.ActivityModule
+import com.omnitracs.retrofit_dagger_kotlin.common.di.DaggerActivityComponent
 
 open class BaseActivity:AppCompatActivity() {
     private val appComponent get() = (application as MyApplication).appComponent

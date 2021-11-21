@@ -1,6 +1,5 @@
-package com.omnitracs.retrofit_dagger_kotlin.common.composition
+package com.omnitracs.retrofit_dagger_kotlin.common.di.activity
 
-import android.app.Application
 import androidx.appcompat.app.AppCompatActivity
 import com.omnitracs.retrofit_dagger_kotlin.networking.TheCatApiService
 import dagger.Component

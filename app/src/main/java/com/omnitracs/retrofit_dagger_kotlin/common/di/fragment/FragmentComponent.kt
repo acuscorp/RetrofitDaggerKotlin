@@ -1,6 +1,5 @@
-package com.omnitracs.retrofit_dagger_kotlin.common.composition
+package com.omnitracs.retrofit_dagger_kotlin.common.di.fragment
 
-import com.omnitracs.retrofit_dagger_kotlin.networking.FetchCatImageUseCase
 import com.omnitracs.retrofit_dagger_kotlin.screen.CatImageFragment
 import dagger.Component
 
