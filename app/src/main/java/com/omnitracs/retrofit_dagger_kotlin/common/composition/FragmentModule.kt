@@ -7,13 +7,13 @@ import dagger.Provides
 
 
 @Module
-class FragmentModule(private val activityCompositionRoot: ActivityCompositionRoot) {
+class FragmentModule(private val activityComponent: ActivityComponent) {
 
     @Provides
-    fun activity() = activityCompositionRoot.activity
+    fun activity() = activityComponent.activity()
 
     @Provides
-    fun theCatApiService() = activityCompositionRoot.theCatApiService
+    fun theCatApiService() = activityComponent.theCatApiService()
 
     @Provides
     fun fetchCatImageUsaCase(theCatApiService: TheCatApiService) = FetchCatImageUseCase(theCatApiService)

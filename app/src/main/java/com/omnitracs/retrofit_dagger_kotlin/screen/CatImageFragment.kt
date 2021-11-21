@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.omnitracs.retrofit_dagger_kotlin.networking.FetchCatImageUseCase
-import com.omnitracs.retrofit_dagger_kotlin.networking.model.CatImageMvc
 import com.omnitracs.retrofit_dagger_kotlin.screen.common.BaseFragment
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

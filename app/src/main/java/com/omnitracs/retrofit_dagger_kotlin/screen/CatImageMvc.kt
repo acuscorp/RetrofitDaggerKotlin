@@ -1,4 +1,4 @@
-package com.omnitracs.retrofit_dagger_kotlin.networking.model
+package com.omnitracs.retrofit_dagger_kotlin.screen
 
 import android.content.Context
 import android.view.LayoutInflater
