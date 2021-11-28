@@ -1,11 +1,11 @@
 package com.omnitracs.retrofit_dagger_kotlin.common.di.application
 
-import android.app.Application
-import com.omnitracs.retrofit_dagger_kotlin.networking.TheCatApiService
+import com.omnitracs.retrofit_dagger_kotlin.common.di.activity.ActivityComponent
+import com.omnitracs.retrofit_dagger_kotlin.common.di.activity.ActivityModule
 import dagger.Component
 
+@AppScope
 @Component(modules = [AppModule::class])
 interface AppComponent {
-    fun application(): Application
-    fun theCatApiService(): TheCatApiService
+    fun newActivityComponent(activityModule: ActivityModule):ActivityComponent
 }

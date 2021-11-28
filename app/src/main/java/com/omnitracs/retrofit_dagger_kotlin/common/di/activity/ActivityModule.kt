@@ -7,12 +7,8 @@ import dagger.Provides
 
 @Module
 class ActivityModule(
-    private val activity: AppCompatActivity,
-    private val appModule: AppComponent
+    private val activity: AppCompatActivity
 ) {
     @Provides
     fun activity() = activity
-
-    @Provides
-    fun theCatApiService() = appModule.theCatApiService()
 }

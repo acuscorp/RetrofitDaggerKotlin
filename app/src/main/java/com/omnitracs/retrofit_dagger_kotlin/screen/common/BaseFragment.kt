@@ -1,20 +1,14 @@
 package com.omnitracs.retrofit_dagger_kotlin.screen.common
 
 import androidx.fragment.app.Fragment
-import com.omnitracs.retrofit_dagger_kotlin.common.di.DaggerFragmentComponent
-import com.omnitracs.retrofit_dagger_kotlin.common.di.fragment.FragmentComponent
-import com.omnitracs.retrofit_dagger_kotlin.common.di.fragment.FragmentModule
+import com.omnitracs.retrofit_dagger_kotlin.common.di.presentation.PresentationComponent
 
 open class BaseFragment: Fragment() {
 
-    private val fragmentComponent: FragmentComponent by lazy {
-        DaggerFragmentComponent
-            .builder()
-            .fragmentModule(FragmentModule((requireActivity() as BaseActivity).activityComponent))
-            .build()
-
+    private val presentationComponent: PresentationComponent by lazy {
+        (requireActivity() as BaseActivity).activityComponent.newPresentationComponent()
     }
 
 
-    val injector get() = fragmentComponent
+    val injector get() = presentationComponent
 }
